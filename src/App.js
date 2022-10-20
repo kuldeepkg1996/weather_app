@@ -22,7 +22,7 @@ function App() {
     .then((response)=>{
       console.log(response.data);
       setData({
-        Date:response.data?.location?.localtime.slice(0, 9),
+        Date:response.data?.location?.localtime.slice(0, 10),
         Time:response.data?.location?.localtime.slice(10),
         Temp:response.data.current.temperature,
         WindDirection:response.data.current.wind_dir,
